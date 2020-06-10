@@ -1,7 +1,14 @@
 {
-  "name": "TODO",
-  "description": "TODO",
+  "name": "es-gabo-en-la-web",
+  "description": "Repositorio de la página web de Es Gabo",
+  "author": "Gabriel Espinel",
+  "license": "",
   "version": "0.0.1",
+  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ilgespinel/es-gabo-en-la-web.git"
+  },
   "scripts": {
     "dev": "sapper dev",
     "build": "sapper build --legacy",
@@ -25,7 +32,9 @@
     "@babel/plugin-transform-runtime": "^7.0.0",
     "@babel/preset-env": "^7.0.0",
     "@babel/runtime": "^7.0.0",
+    "@jackfranklin/rollup-plugin-markdown": "^0.2.0",
     "@rollup/plugin-babel": "^5.0.0",
+    "rollup-plugin-glob": "^1.0.2",
     "@rollup/plugin-commonjs": "^12.0.0",
     "@rollup/plugin-node-resolve": "^8.0.0",
     "@rollup/plugin-replace": "^2.2.0",
