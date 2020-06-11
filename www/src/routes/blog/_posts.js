@@ -1,4 +1,4 @@
-import rawPosts from '../../../posts/*.md'
+import rawPosts from '../../../../posts/*.md'
 
 const posts = rawPosts
 	.map(post => {
