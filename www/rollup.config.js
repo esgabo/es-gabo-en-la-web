@@ -9,6 +9,7 @@ import pkg from './package.json';
 import markdown from './rollup-md-converter-plugin';
 import glob from 'rollup-plugin-glob';
 import MarkdownIt from 'markdown-it';
+import mdBlockVideoPlugin from 'markdown-it-block-embed';
 
 const mode = process.env.NODE_ENV;
 const dev = mode === 'development';
@@ -18,7 +19,10 @@ const onwarn = (warning, onwarn) => (warning.code === 'CIRCULAR_DEPENDENCY' && /
 
 const mdConverter = {
 	converter: {
-		delegate: new MarkdownIt(),			
+		delegate: new MarkdownIt()
+			.use(mdBlockVideoPlugin, {
+				containerClassName: "video-embed"
+		  	}),			
 		convertMarkdown: function (md) {
 			return this.delegate.render(md);
 		}
