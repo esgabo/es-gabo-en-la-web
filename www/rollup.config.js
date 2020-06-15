@@ -8,7 +8,7 @@ import config from 'sapper/config/rollup.js';
 import pkg from './package.json';
 import markdown from './rollup-md-converter-plugin';
 import glob from 'rollup-plugin-glob';
-import showdown from 'showdown';
+import MarkdownIt from 'markdown-it';
 
 const mode = process.env.NODE_ENV;
 const dev = mode === 'development';
@@ -18,11 +18,9 @@ const onwarn = (warning, onwarn) => (warning.code === 'CIRCULAR_DEPENDENCY' && /
 
 const mdConverter = {
 	converter: {
-		delegate: new showdown.Converter({
-			metadata: true,
-		  }),			
+		delegate: new MarkdownIt(),			
 		convertMarkdown: function (md) {
-			return this.delegate.makeHtml(md);
+			return this.delegate.render(md);
 		}
 	}
 };
