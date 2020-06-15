@@ -6,8 +6,9 @@ import babel from '@rollup/plugin-babel';
 import { terser } from 'rollup-plugin-terser';
 import config from 'sapper/config/rollup.js';
 import pkg from './package.json';
-import markdown from '@jackfranklin/rollup-plugin-markdown';
+import markdown from './rollup-md-converter-plugin';
 import glob from 'rollup-plugin-glob';
+import showdown from 'showdown';
 
 const mode = process.env.NODE_ENV;
 const dev = mode === 'development';
@@ -15,12 +16,23 @@ const legacy = !!process.env.SAPPER_LEGACY_BUILD;
 
 const onwarn = (warning, onwarn) => (warning.code === 'CIRCULAR_DEPENDENCY' && /[/\\]@sapper[/\\]/.test(warning.message)) || onwarn(warning);
 
+const mdConverter = {
+	converter: {
+		delegate: new showdown.Converter({
+			metadata: true,
+		  }),			
+		convertMarkdown: function (md) {
+			return this.delegate.makeHtml(md);
+		}
+	}
+};
+
 export default {
 	client: {
 		input: config.client.input(),
 		output: config.client.output(),
 		plugins: [
-			markdown(),
+			markdown(mdConverter),
 			glob(),
 			replace({
 				'process.browser': true,
@@ -67,7 +79,7 @@ export default {
 		input: config.server.input(),
 		output: config.server.output(),
 		plugins: [
-			markdown(),
+			markdown(mdConverter),
 			glob(),
 			replace({
 				'process.browser': false,
