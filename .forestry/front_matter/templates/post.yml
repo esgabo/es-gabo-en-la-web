@@ -1,4 +1,60 @@
 ---
 label: Post
 hide_body: true
-fields: []
+fields:
+- name: title
+  type: text
+  config:
+    required: true
+  label: Title
+  description: Title of the post
+- name: summary
+  type: textarea
+  default: ''
+  config:
+    required: true
+    wysiwyg: false
+    schema:
+      format: markdown
+  label: Summary
+  description: Summary of the post content
+- name: heading_image
+  type: file
+  config:
+    maxSize: 64
+  label: Heading Image
+  description: Associated image
+- name: published
+  type: boolean
+  label: Published
+  description: Whether the post should be visible
+- name: published_date
+  type: datetime
+  label: Published Date
+  description: Date the post was published
+  config:
+    required: false
+    date_format: 
+    time_format: 
+    display_utc: false
+  default: now
+  hidden: true
+  showOnly:
+    field: published
+    value: true
+- name: tags
+  type: tag_list
+  default: []
+  label: Tags
+  description: Associated tags
+- name: created_date
+  type: datetime
+  label: Created Date
+  description: Date the post was created
+  config:
+    required: false
+    date_format: 
+    time_format: 
+    display_utc: false
+  hidden: false
+  default: now
