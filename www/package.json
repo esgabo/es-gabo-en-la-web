@@ -10,10 +10,13 @@
     "url": "https://github.com/ilgespinel/es-gabo-en-la-web.git"
   },
   "scripts": {
-    "dev": "sapper dev",
-    "build": "sapper build --legacy",
+    "dev": "run-p start:dev watch:css",
+    "build": "npm run build:css && sapper build --legacy",
+    "watch:css": "postcss static/global.css -o static/index.css -w",
+    "build:css": "NODE_ENV=production postcss static/global.css -o static/index.css",
     "export": "sapper export --legacy",
     "start": "node __sapper__/build",
+    "start:dev": "sapper dev",
     "cy:run": "cypress run",
     "cy:open": "cypress open",
     "test": "run-p --race dev cy:run"
@@ -37,11 +40,17 @@
     "markdown-it": "^11.0.0",
     "markdown-it-block-embed": "0.0.3",
     "npm-run-all": "^4.1.5",
+    "postcss-cli": "^7.1.1",
+    "postcss-import": "^12.0.1",
+    "postcss-load-config": "^2.1.0",
+    "postcss-nested": "^4.2.1",
     "rollup": "^2.3.4",
     "rollup-plugin-glob": "^1.0.2",
-    "rollup-plugin-svelte": "^5.0.1",
+    "rollup-plugin-svelte": "^5.2.2",
     "rollup-plugin-terser": "^5.3.0",
     "sapper": "^0.27.0",
-    "svelte": "^3.0.0"
+    "svelte": "^3.0.0",
+    "svelte-preprocess": "^3.9.7",
+    "tailwindcss": "^1.4.6"
   }
 }

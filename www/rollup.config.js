@@ -10,6 +10,7 @@ import markdown from './rollup-md-converter-plugin';
 import glob from 'rollup-plugin-glob';
 import MarkdownIt from 'markdown-it';
 import mdBlockVideoPlugin from 'markdown-it-block-embed';
+import sveltePreprocess from 'svelte-preprocess';
 
 const mode = process.env.NODE_ENV;
 const dev = mode === 'development';
@@ -29,6 +30,15 @@ const mdConverter = {
 	}
 };
 
+const preprocess = sveltePreprocess({
+	postcss: {
+	  plugins: [
+		require('postcss-import')(),
+		require('postcss-nested')()
+	  ]
+	}
+  });
+
 export default {
 	client: {
 		input: config.client.input(),
@@ -41,6 +51,7 @@ export default {
 				'process.env.NODE_ENV': JSON.stringify(mode)
 			}),
 			svelte({
+				preprocess,
 				dev,
 				hydratable: true,
 				emitCss: true
@@ -88,6 +99,7 @@ export default {
 				'process.env.NODE_ENV': JSON.stringify(mode)
 			}),
 			svelte({
+				preprocess,
 				generate: 'ssr',
 				dev
 			}),

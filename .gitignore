@@ -5,3 +5,4 @@ www/yarn-error.log
 www/cypress/screenshots/
 www/__sapper__/
 experimental
+www/static/index.css
