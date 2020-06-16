@@ -22,7 +22,8 @@ const mdConverter = {
 	converter: {
 		delegate: new MarkdownIt()
 			.use(mdBlockVideoPlugin, {
-				containerClassName: "video-embed"
+				containerClassName: "video-embed",
+				outputPlayerSize: false
 		  	}),			
 		convertMarkdown: function (md) {
 			return this.delegate.render(md);
