@@ -1,6 +1,10 @@
 ---
 title: How is Sapper different from Next.js?
-date: 2020-06-01T00:15:00.000Z
+summary: Next.js is a React framework from Vercel..., and is the inspiration for Sapper. There are a few notable differences, however...
+heading_image: ''
+published: true
+published_date: 2020-06-01T00:15:00.000Z
+created_date: 2020-06-01T00:15:00.000Z
 ---
 [Next.js](https://github.com/zeit/next.js) is a React framework from [Vercel](https://vercel.com/), and is the inspiration for Sapper. There are a few notable differences, however:
 

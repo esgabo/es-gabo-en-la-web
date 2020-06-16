@@ -1,6 +1,10 @@
 ---
 title: Why the name?
-date: 2020-06-01T00:13:00.000Z
+summary: In war, the soldiers who build bridges, repair roads, clear minefields and conduct demolitions — all under combat conditions...
+heading_image: ''
+published: true
+published_date: 2020-06-01T00:13:00.000Z
+created_date: 2020-06-01T00:13:00.000Z
 ---
 In war, the soldiers who build bridges, repair roads, clear minefields and conduct demolitions — all under combat conditions — are known as _sappers_.
 

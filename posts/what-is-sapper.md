@@ -1,6 +1,10 @@
 ---
 title: What is Sapper?
-date: 2020-06-01T00:09:00.000Z
+summary: First, you have to know what Svelte is. Svelte is a UI framework with a bold new idea. Rather than providing a library that you write code with (like React or Vue, for example), it's a compiler that turns your components into highly optimized vanilla JavaScript. If you haven't already read the...
+heading_image: ''
+published: true
+published_date: 2020-06-01T00:09:00.000Z
+created_date: 2020-06-01T00:09:00.000Z
 ---
 First, you have to know what [Svelte](https://svelte.dev) is. Svelte is a UI framework with a bold new idea: rather than providing a library that you write code with (like React or Vue, for example), it's a compiler that turns your components into highly optimized vanilla JavaScript. If you haven't already read the [introductory blog post](https://svelte.dev/blog/frameworks-without-the-framework), you should!
 
