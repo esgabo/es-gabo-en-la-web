@@ -9,7 +9,7 @@ sections:
   label: Posts
   create: all
   match: "**/*"
-  new_doc_ext: ".md"
+  new_doc_ext: md
   templates:
   - post
 upload_dir: www/static/media
@@ -22,5 +22,5 @@ build:
   install_dependencies_command: npm install
   preview_docker_image: node:10
   mount_path: "/srv"
-  working_dir: "/srv"
+  working_dir: "/srv/www"
   instant_preview_command: npm run export
