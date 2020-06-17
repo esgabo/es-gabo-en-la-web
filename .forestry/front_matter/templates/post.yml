@@ -72,3 +72,5 @@ fields:
     display_utc: false
   hidden: false
   default: now
+pages:
+- posts/9-razones-para-aprender-a-programar.md
