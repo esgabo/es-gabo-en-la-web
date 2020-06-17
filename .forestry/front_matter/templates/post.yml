@@ -18,6 +18,20 @@ fields:
       format: markdown
   label: Summary
   description: Summary of the post content
+- name: author
+  type: select
+  default: ''
+  config:
+    required: true
+    options:
+    - Gabriel Espinel | @es.gabo
+    source:
+      type: simple
+      section: posts
+      file: 
+      path: 
+  label: Author
+  description: Author of the post
 - name: heading_image
   type: file
   config:
