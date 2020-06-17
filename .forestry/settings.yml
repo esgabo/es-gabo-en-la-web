@@ -4,14 +4,23 @@ auto_deploy: false
 admin_path: ''
 webhook_url: 
 sections:
+- type: heading
+  label: Blog
 - type: directory
   path: posts
   label: Posts
-  create: all
+  create: documents
   match: "**/*"
   new_doc_ext: md
   templates:
   - post
+- type: heading
+  label: Instagram
+- type: directory
+  path: links
+  label: Links
+  create: documents
+  match: "**/*"
 upload_dir: www/static/media
 public_path: "/media"
 front_matter_path: ''
