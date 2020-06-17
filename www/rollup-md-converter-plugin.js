@@ -1,6 +1,7 @@
 import { createFilter } from 'rollup-pluginutils';
 import path from 'path';
 import frontMatter from 'gray-matter';
+import readingTime from 'reading-time';
 
 export default function convertMarkdown(options = {}) {
     const filter = createFilter(options.include, options.exclude);
@@ -18,11 +19,14 @@ export default function convertMarkdown(options = {}) {
             if (extension !== '.md') return null;
 
             const matterResult = frontMatter(code);
+            const metadata = matterResult.data;
+            metadata.reading = readingTime(matterResult.content);       
+
             const html = converter.convertMarkdown(matterResult.content);
 
             const result = JSON.stringify({
                 html,
-                metadata: matterResult.data,
+                metadata: metadata,
                 filename: path.basename(id),
                 path: id
             });
