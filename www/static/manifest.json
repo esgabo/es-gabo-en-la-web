@@ -1,8 +1,8 @@
 {
 	"background_color": "#ffffff",
 	"theme_color": "#333333",
-	"name": "TODO",
-	"short_name": "TODO",
+	"name": "Es Gabo en la Web",
+	"short_name": "esgabo.dev",
 	"display": "minimal-ui",
 	"start_url": "/",
 	"icons": [
