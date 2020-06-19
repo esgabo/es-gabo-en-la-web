@@ -11,7 +11,7 @@ summary: |-
   Puede que te interese leer esta publicación porque te puede convencer para que aprendas a programar.
 author: Gabriel Espinel | @es.gabo
 heading_image: "/media/aprender-a-programar.webp"
-published: false
+published: true
 
 ---
 Antes de empezar la cuenta, quiero hacer la aclaratoria acerca de estas razones. Estas son razones **objetivas** que no dependen de mi opinión, sino de hechos.
