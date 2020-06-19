@@ -1,5 +1,5 @@
 ---
-published_date: 2020-06-17T22:07:12.000+00:00
+published_date: 2020-06-19T04:00:00Z
 tags:
 - opinion
 - programacion
