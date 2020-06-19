@@ -35,7 +35,11 @@
 		</div>
 
 		<div class="flex flex-wrap mt-5">
-			<div class="mx-auto content w-4/6 mt-5">
+			<div class="mx-auto content w-4/6">
+			{#if (post.metadata.heading_image)} 
+			<img class="mb-5 w-3/4 mx-auto" alt="Header" src="{post.metadata.heading_image}"/>
+			{/if}
+
 				{@html post.html}
 			</div>
 		</div>
