@@ -53,7 +53,7 @@ fields:
     time_format: 
     display_utc: false
   default: now
-  hidden: true
+  hidden: false
   showOnly:
     field: published
     value: true
@@ -71,7 +71,7 @@ fields:
     date_format: 
     time_format: 
     display_utc: false
-  hidden: false
+  hidden: true
   default: now
 pages:
 - posts/9-razones-para-aprender-a-programar.md
