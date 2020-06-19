@@ -29,7 +29,7 @@ El software es lo impalpable del computador. Podríamos llamarle la mente o el a
 
 Como ejemplos de software, tenemos el sistema operativo Windows, Android, iOS (iPhones y Macs). También las aplicaciones que usan diariamente como Word, Excel, Instagram, Facebook, y un sin fin más de aplicaciones.
 
-> Si puedes golpearlo, entonces es hardware, si solo puedes insultarlo, entonces es software.
+> Si puedes golpearlo, entonces es hardware. Si solo puedes insultarlo, entonces es software.
 
 Ya habiendo diferenciado el software y el hardware. Vamos a definir, por encima, qué es el software. Ya sabemos que es lo impalpable, pero ¿de qué está hecho? o ¿Cómo se hace el software?.
 
