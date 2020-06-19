@@ -14,6 +14,7 @@
 </script>
 
 <script>
+	import PostMetaData from '../../components/PostMetaData.svelte';
 	export let post;
 </script>
 
@@ -26,12 +27,15 @@
 	<div class="container mx-auto flex flex-wrap pt-4 pb-12">
 		
 		<h1 class="w-full my-2 text-5xl font-bold leading-tight text-center text-gray-800">{post.metadata.title}</h1>
-		<div class="w-full mb-10">	
+		<p class="w-full my-2 text-center text-gray-800">
+			<PostMetaData {post} displayTime={false}/>
+		</p>
+		<div class="w-full">	
 			<div class="h-1 mx-auto gradient w-64 opacity-25 my-0 py-0 rounded-t"></div>
 		</div>
 
-		<div class="flex flex-wrap">
-			<div class="mx-auto content w-4/6">
+		<div class="flex flex-wrap mt-5">
+			<div class="mx-auto content w-4/6 mt-5">
 				{@html post.html}
 			</div>
 		</div>
