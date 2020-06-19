@@ -8,6 +8,10 @@
 	}
 }
 
+.text-2xs {
+	font-size: 0.5rem;
+}
+
 .gradient {
 	background: linear-gradient(90deg, #113b54 0%, #0e2b3c 100%);
 }
@@ -36,12 +40,20 @@
 	@apply bg-gabo-blue text-white;
 }
 
-.content {
-	@apply text-gray-800 text-2xl text-justify;
+.badge {
+	@apply rounded-full bg-gabo-orange uppercase text-white px-2 py-1 text-2xs font-bold;
 }
 
-.content p {
-	@apply mb-4;
+.badge-gabo-orange {
+	@apply badge bg-gabo-orange
+}
+
+.content {
+	@apply text-gray-800 text-base text-justify;
+}
+
+.content > p {
+	@apply mb-5;
 }
 
 .content p a {
@@ -54,6 +66,16 @@
 
 .content ol {
 	@apply list-decimal text-justify pl-16 mb-5;
+}
+
+.content > h2 {
+	@apply font-semibold text-4xl mb-5;
+}
+
+.content blockquote {
+	@apply text-justify mx-2 mb-5 px-5 py-2 border-solid border-l-4 italic;
+	border-color: #ff592c;
+	background-color: #fffaf0;
 }
 
 .video-embed {

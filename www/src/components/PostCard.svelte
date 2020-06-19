@@ -16,7 +16,7 @@
 		<p class="w-full text-gray-600 text-xs px-6">
 			Publicado: <FormattedDate date={post.metadata.published_date}/> 
 			{#if isNew} 
-			<span class="rounded-full bg-gabo-orange uppercase text-white px-2 py-1 text-xs font-bold mr-3">Nuevo</span>
+			<span class="badge-gabo-orange ml-2">Nuevo</span>
 			{/if}
 		</p>
 		<p class="text-base px-6 mb-4 mt-2 content">{@html post.metadata.summary}</p>
