@@ -72,6 +72,14 @@
 	@apply font-semibold text-4xl mb-5;
 }
 
+.content > h3 {
+	@apply font-semibold text-3xl mb-5;
+}
+
+.content > h4 {
+	@apply font-semibold text-2xl mb-5;
+}
+
 .content blockquote {
 	@apply text-justify mx-2 mb-5 px-5 py-2 border-solid border-l-4 italic;
 	border-color: #ff592c;
