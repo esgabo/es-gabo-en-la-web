@@ -10,6 +10,6 @@ const posts = rawPosts
 		return post;
 	})
 	.filter(post => post.metadata.published === true)
-	.sort((a,b) => a.metadata.published_date.getTime() - b.metadata.published_date.getTime());
+	.sort((a,b) => b.metadata.published_date.getTime() - a.metadata.published_date.getTime()); // desc order
 
 export default posts;
