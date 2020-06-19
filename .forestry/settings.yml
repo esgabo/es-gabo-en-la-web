@@ -4,23 +4,32 @@ auto_deploy: false
 admin_path: ''
 webhook_url: 
 sections:
+- type: heading
+  label: Blog
 - type: directory
   path: posts
   label: Posts
-  create: all
+  create: documents
   match: "**/*"
   new_doc_ext: md
   templates:
   - post
+- type: heading
+  label: Instagram
+- type: directory
+  path: links
+  label: Links
+  create: documents
+  match: "**/*"
 upload_dir: www/static/media
 public_path: "/media"
 front_matter_path: ''
 use_front_matter_path: false
 file_template: ":filename:"
 build:
-  preview_output_directory: www/__sapper__/export
+  preview_output_directory: www/__sapper__/dev
   install_dependencies_command: npm install
   preview_docker_image: node:10
   mount_path: "/srv"
   working_dir: "/srv/www"
-  instant_preview_command: npm run export
+  instant_preview_command: npm run develop

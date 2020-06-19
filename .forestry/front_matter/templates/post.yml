@@ -1,6 +1,7 @@
 ---
 label: Post
-hide_body: true
+hide_body: false
+display_field: title
 fields:
 - name: title
   type: text
@@ -18,6 +19,20 @@ fields:
       format: markdown
   label: Summary
   description: Summary of the post content
+- name: author
+  type: select
+  default: ''
+  config:
+    required: true
+    options:
+    - Gabriel Espinel | @es.gabo
+    source:
+      type: simple
+      section: posts
+      file: 
+      path: 
+  label: Author
+  description: Author of the post
 - name: heading_image
   type: file
   config:
@@ -33,12 +48,12 @@ fields:
   label: Published Date
   description: Date the post was published
   config:
-    required: false
+    required: true
     date_format: 
     time_format: 
     display_utc: false
   default: now
-  hidden: true
+  hidden: false
   showOnly:
     field: published
     value: true
@@ -56,5 +71,7 @@ fields:
     date_format: 
     time_format: 
     display_utc: false
-  hidden: false
+  hidden: true
   default: now
+pages:
+- posts/9-razones-para-aprender-a-programar.md
