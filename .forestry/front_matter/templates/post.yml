@@ -48,7 +48,7 @@ fields:
   label: Published Date
   description: Date the post was published
   config:
-    required: false
+    required: true
     date_format: 
     time_format: 
     display_utc: false
