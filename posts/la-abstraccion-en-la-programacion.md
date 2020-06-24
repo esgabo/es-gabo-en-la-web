@@ -9,11 +9,11 @@ summary: |
   La abstracción más que una palabra elegante de programación, es un concepto que aplicamos en nuestra vida diaria. Especialmente útil y necesaria en la programación aunque un poco complejo de entender al principio y aplicarlo adecuadamente.
   Si no sabes qué es y como se relaciona con la programación, puede que te interese esta publicación.
 author: Gabriel Espinel | @es.gabo
-heading_image: ''
-published: false
+heading_image: "/media/abstracto.webp"
+published: true
 
 ---
-Según la [RAE](https://www.rae.es/ "rae-enalce"), la abstracción, o más específicamente, el verbo _abstraer_ significa:
+Según la [RAE](https://www.rae.es/ "rae-enlace"), la abstracción, o más específicamente, el verbo [_abstraer_](https://dle.rae.es/abstraer "rae-abstraer") significa:
 
 > Separar por medio de una operación intelectual un rasgo o una cualidad de algo para analizarlos aisladamente o considerarlos en su pura esencia o noción.
 
@@ -21,11 +21,11 @@ De esto podemos decir que _abstraer_ es, básicamente, ignorar o eliminar detall
 
 ## La abstracción como base para la reutilización
 
-Los humanos dependemos tanto de la abstracción que, virtualmente, nuestra vida cotidiana se basa en ella. Damos por hecho muchas cosas a nuestro alrededor, abstrayéndonos de su funcionamiento interno; simplemente conociendo qué hace, qué necesita para hacerlo pero **no** cómo lo hace.
+Los humanos dependemos tanto de la abstracción que, virtualmente, nuestra vida cotidiana se basa en ella. Damos por hechas muchas cosas a nuestro alrededor, abstrayéndonos de su funcionamiento interno; simplemente conociendo qué hace, qué necesita para hacerlo pero **no** cómo lo hace.
 
 Piensa un poco y analiza con cuantos objetos interactúas diariamente de los cuales no tienes idea de cómo funcionan y la verdad, no tienes que saberlo. La mayoría de nuestras investigaciones científicas se basan en conclusiones de trabajos de otras personas, donde se da por hecho que algo funciona como dice que funciona, y trabajan sobre esas conclusiones sin tener que empezar todo desde cero. Esta es una buena manera de avanzar reusando el trabajo existente, abstrayéndonos de los detalles internos lo que nos permite funcionar en un nivel más alto.
 
-¿Te has preguntado como funciona un televisor? Pues si lo pensamos un poco, le damos energía eléctrica, alguna señal y esperamos que nos muestre imágenes. Ahí estamos abstrayendo muchos detalles. ¿Sabes cómo funciona la pantalla del televisor? ¿Sabes cómo se representan los colores en la pantalla del televisor?. 
+¿Te has preguntado como funciona un televisor? Pues si lo pensamos un poco, le damos energía eléctrica, alguna señal y esperamos que nos muestre imágenes. Ahí estamos abstrayendo muchos detalles. ¿Sabes cómo funciona la pantalla del televisor? ¿Sabes cómo se representan los colores en la pantalla del televisor?.
 
 > No necesitas saber como funciona algo para usarlo
 
@@ -33,11 +33,11 @@ Piensa un poco y analiza con cuantos objetos interactúas diariamente de los cua
 
 Este término se usa como analogía para hacer referencia a componentes o sistemas de los cuales no se conocen los detalles interno de su funcionamiento.
 
-Básicamente, llamamos _caja negra_ a aquellas cosas que le hemos aplicado la abstracción, es decir, no queremos saber sus detalles internos, solamente como interactuar con ese algo. Para eso, debemos saber qué necesita para funcionar y cuál es el resultado que genera (entrada y salida). 
+Básicamente, llamamos _caja negra_ a aquellas cosas que le hemos aplicado la abstracción, es decir, no queremos saber sus detalles internos, solamente como interactuar con ese algo. Para eso, debemos saber qué necesita para funcionar y cuál es el resultado que genera (entrada y salida).
 
 Así como en los ejemplos anteriores, vemos muchas cosas como “cajas negras”: un televisor, un auto, una máquina de helados, una calculadora, un restaurante, el cuerpo humano, y muchísimas cosas más.
 
-Este concepto es esencial para los programadores porque, basados en él, podemos reutilizar programas y códigos de otras personas simplemente conociendo su entrada y los resultados que produce. 
+Este concepto es esencial para los programadores porque, basados en él, podemos reutilizar programas y códigos de otras personas simplemente conociendo su entrada y los resultados que produce.
 
 ## La abstracción como técnica para analizar problemas
 
@@ -45,7 +45,7 @@ Imaginemos a un pintor de paredes que debe cotizar cuanto cobrar por pintar una 
 
 Lo mismo ocurre con el plomero. A él no le interesa nada más que las tuberías, el material del cual están hechas, su ubicación, etc. Entonces deja de pensar en las cosas irrelevantes para su problema inmediato y se enfoca únicamente en ese problema específico.
 
-;placeholder -- Imagen de una Casa completa / La abstraccion del pintor / La abstraccion del plomero.:
+![](/media/abstracciones_casas.webp)
 
 En estos casos, ellos saben bien en qué deben enfocarse. Ellos llevan años en su negocio y saben bien qué ignorar y qué no. Su experiencia juega un papel importante.
 
@@ -53,7 +53,7 @@ En la programación, muchas veces no es sencillo saber que es relevante y que no
 
 ### La programación es multi-disciplinaria
 
-Como ya mencione en [otra publicación](https://esgabo.dev/blog/que-es-la-programacion-y-que-hace-un-programador "que-hace-un-programador"). La programación es, básicamente, resolver problemas. Los programadores aprenden a (o aspiran) resolver problemas de la manera más eficiente. Sin embargo, no pueden pretender saber todo acerca de todas las carreras que existen y todas las áreas de conocimiento. 
+Como ya mencione en [otra publicación](https://esgabo.dev/blog/que-es-la-programacion-y-que-hace-un-programador "que-hace-un-programador"). La programación es, básicamente, resolver problemas. Los programadores aprenden a (o aspiran) resolver problemas de la manera más eficiente. Sin embargo, no pueden pretender saber todo acerca de todas las carreras que existen y todas las áreas de conocimiento.
 
 Para llevar con éxito un proyecto complejo, que cumpla con la necesidad del cliente y su negocio, es necesario aprender un poco de ese negocio; de esa disciplina. Si trabajas en un sistema de contabilidad, pues el programador debe entender un poco de contabilidad. Si trabajas en un sistema de ventas, entonces el programar debe entender un poco de logística e inventario.
 
@@ -64,8 +64,6 @@ Para poder resolver un problema, primero debemos entenderlo. Si no lo entendemos
 Un problema complejo puede ser dividido en varios problemas más simples. Estos, a su vez, pueden ser divididos en otros más pequeños, hasta que tengamos un conjunto de problemas relativamente triviales o cuya solución sea fácil de hallar.
 
 ¿Quieres una tienda online? Bien, ¿Cómo está compuesta la tienda? ¿Qué productos tienes? ¿Qué categorías de productos? ¿Qué descuentos ofreces?. Todas estas preguntas rompen un problema más grande como el de una tienda online, en problemas más pequeños y manejables. Estos problemas más pequeños los podría romper aún más, abstrayéndome de los otros problemas, momentáneamente, para enfocarme en una sola cosa a la vez.
-
-;placeholder -- arbol de problemas.:
 
 ## La abstracción como herramienta para el modelado
 
@@ -89,6 +87,6 @@ Encontrar el nivel de abstracción adecuado no es trivial. En mi opinión, es al
 
 ## Conclusiones
 
-La abstracción más que una palabra elegante de programación, es un concepto que aplicamos en nuestra vida diaria. 
+La abstracción más que una palabra elegante de programación, es un concepto que aplicamos en nuestra vida diaria.
 
 Especialmente útil y necesaria en la programación aunque un poco complejo de entender al principio y aplicarlo adecuadamente.
