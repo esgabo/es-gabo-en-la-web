@@ -75,4 +75,5 @@ fields:
   default: now
 pages:
 - posts/9-razones-para-aprender-a-programar.md
+- posts/la-abstraccion-en-la-programacion.md
 - posts/que-es-la-programacion-y-que-hace-un-programador.md
