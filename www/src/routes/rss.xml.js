@@ -30,8 +30,8 @@ export async function get(req, res, next) {
 
         posts.forEach(({ metadata, slug, html }) => {
             const itemUrl = `${BASE_URL}/${BLOG_RELATIVE_PATH}/${slug}`;
-            console.log(itemUrl);
-            
+            const headingImg = (metadata.heading_image) ? `<img src="${metadata.heading_image}" alt="heading-image" /><br />` : '';
+
             feed.item({
                 title: metadata.title,
                 url: itemUrl,
@@ -46,7 +46,7 @@ export async function get(req, res, next) {
                 },
                 custom_elements: [
                   {
-                    "content:encoded": `${html} <br /><em>Publicado originalmente en <a href="${itemUrl}">esgabo.dev</a>.</em>`
+                    "content:encoded": `${headingImg} ${html} <br /><em>Publicado originalmente en <a href="${itemUrl}">esgabo.dev</a>.</em>`
                   }
                 ]
               });
