@@ -30,7 +30,7 @@ export async function get(req, res, next) {
 
         posts.forEach(({ metadata, slug, html }) => {
             const itemUrl = `${BASE_URL}/${BLOG_RELATIVE_PATH}/${slug}`;
-            const headingImg = (metadata.heading_image) ? `<img src="${metadata.heading_image}" alt="heading-image" /><br />` : '';
+            const headingImg = (metadata.heading_image) ? `<img src="${BASE_URL}${metadata.heading_image}" alt="heading-image" /><br />` : '';
 
             feed.item({
                 title: metadata.title,
