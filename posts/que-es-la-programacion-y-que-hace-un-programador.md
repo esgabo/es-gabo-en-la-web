@@ -1,8 +1,9 @@
 ---
-published_date: 2020-06-19T22:44:00Z
+published_date: 2020-06-19T22:44:00.000+00:00
 tags:
 - programacion
-created_date: 2020-06-19T19:24:15Z
+- principiante
+created_date: 2020-06-19T19:24:15.000+00:00
 title: "¿Qué es la programación? y ¿Qué hace un programador? "
 summary: Si no sabes qué hacen los programadores, puede que te interese leer esta
   publicación para que no tengas más esa duda. No solo explico qué son y qué hacen
