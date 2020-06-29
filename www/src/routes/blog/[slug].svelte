@@ -15,6 +15,7 @@
 
 <script>
 	import PostMetaData from '../../components/PostMetaData.svelte';
+	import PostCommentList from '../../components/comments/PostCommentList.svelte';
 	export let post;
 </script>
 
@@ -36,12 +37,24 @@
 
 		<div class="flex flex-wrap mt-5">
 			<div class="mx-auto content w-4/6">
-			{#if (post.metadata.heading_image)} 
-			<img class="mb-5 w-3/4 mx-auto" alt="Header" src="{post.metadata.heading_image}"/>
-			{/if}
-
+				{#if (post.metadata.heading_image)} 
+				<img class="mb-5 w-3/4 mx-auto" alt="Header" src="{post.metadata.heading_image}"/>
+				{/if}
+				
 				{@html post.html}
 			</div>
+		</div>
+	</div>
+
+	<div class="container mx-auto flex flex-wrap pt-4 pb-12 lg:w-4/6">
+
+		<h1 class="w-full my-2 text-5xl font-bold leading-tight text-center text-gray-800">Comentarios</h1>
+		<div class="w-full mb-4">	
+			<div class="h-1 mx-auto gradient w-64 opacity-25 my-0 py-0 rounded-t"></div>
+		</div>
+
+		<div class="w-full flex flex-col flex-grow flex-shrink">
+			<PostCommentList {post}/>
 		</div>
 	</div>
 </section>

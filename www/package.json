@@ -55,6 +55,7 @@
     "sapper": "^0.27.0",
     "svelte": "^3.0.0",
     "svelte-preprocess": "^3.9.7",
-    "tailwindcss": "^1.4.6"
+    "tailwindcss": "^1.4.6",
+    "firebase": "^7.15.4"
   }
 }
