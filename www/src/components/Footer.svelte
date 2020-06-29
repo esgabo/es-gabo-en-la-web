@@ -16,5 +16,6 @@
 </svg>
 
 <div class="w-full mx-auto px-8 bg-white text-gray-800">
-	<span >Copyright 2020 Gabriel Espinel. Todos los derechos reservados.</span>
+	<div>Copyright 2020 Gabriel Espinel. Todos los derechos reservados.</div>
+	<div><a href="/sitemap.xml">Sitemap</a></div>
 </div>
