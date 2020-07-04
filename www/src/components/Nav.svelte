@@ -28,7 +28,7 @@
 			}
 			else {
 				header.classList.remove("bg-white");
-				
+
 				navaction.classList.add("navaction-gabo-base");
 				navaction.classList.remove("navaction-gabo-scrolled");
 
@@ -37,7 +37,7 @@
 					toToggle[i].classList.add(toggleTextBaseColor);
 					toToggle[i].classList.remove(toggleTextMovedColor);
 				}
-				
+
 				header.classList.remove("shadow");
 				navcontent.classList.remove("bg-white");
 				navcontent.classList.add("bg-gray-100");
@@ -52,14 +52,14 @@
 
 		/*Toggle dropdown list*/
 		/*https://gist.github.com/slavapas/593e8e50cf4cc16ac972afcbad4f70c8*/
-	
+
 		var navMenuDiv = document.getElementById("nav-content");
 		var navMenu = document.getElementById("nav-toggle");
-		
+
 		document.onclick = check;
 		function check(e){
 			var target = (e && e.target) || (event && event.srcElement);
-			
+
 			//Nav Menu
 			if (!checkParent(target, navMenuDiv)) {
 				// click NOT on the menu
@@ -73,7 +73,7 @@
 					navMenuDiv.classList.add("hidden");
 				}
 			}
-			
+
 		}
 
 		function checkParent(t, elm) {
@@ -84,7 +84,7 @@
 			return false;
 		}
 	});
-	
+
 </script>
 
 <style>
@@ -102,12 +102,12 @@
 }
 </style>
 
-<nav id="header" class="fixed w-full z-30 top-0 text-white">
+<nav id="header" class="fixed w-full z-50 top-0 text-white">
 
 	<div class="w-full container mx-auto flex flex-wrap items-center justify-between mt-0 py-2">
-			
+
 		<div class="pl-4 flex items-center">
-			<a class="toggleColour text-white no-underline hover:no-underline font-bold text-2xl lg:text-4xl"  href="."> 
+			<a class="toggleColour text-white no-underline hover:no-underline font-bold text-2xl lg:text-4xl"  href=".">
 				<img class="h-8 fill-current inline" style="height:35px;margin-bottom: 5px;" src="logo_naranja.svg" alt="logo"> GABO
 			</a>
 		</div>

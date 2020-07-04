@@ -37,6 +37,31 @@
 	filter: drop-shadow(0 6px .3rem #113b54);
 }
 
+.shadowes {
+	filter: drop-shadow(0 12px .3rem #113b54);
+}
+
+.anima {
+	animation: move 1s alternate infinite;
+}
+
+@keyframes move {
+	from{
+		transform:translateX(-2px);
+	}
+	to{
+		transform:translateX(2px);
+	}
+}
+
+.bg-clg {
+	background-color: #edf2f7;
+}
+
+.roundesp {
+	border-radius: 1rem;
+}
+
 .gradient {
 	background: linear-gradient(90deg, #113b54 0%, #0e2b3c 100%);
 }

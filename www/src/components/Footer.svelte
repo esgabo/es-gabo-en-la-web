@@ -1,4 +1,4 @@
-<svg viewBox="0 0 1439 147" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<!--<svg viewBox="0 0 1439 147" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 	<g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
 		<g transform="translate(-1.000000, -14.000000)" fill-rule="nonzero">
 			<g class="wave" fill="#ffffff">
@@ -13,9 +13,9 @@
 			</g>
 		</g>
 	</g>
-</svg>
+</svg>-->
 
-<div class="w-full mx-auto px-8 bg-white text-gray-800">
+<div class="w-full mx-auto px-8 pb-4 bg-clg text-base text-gray-400">
 	<div>Copyright 2020 Gabriel Espinel. Todos los derechos reservados.</div>
 	<div><a href="/sitemap.xml">Sitemap</a> | <a href="/rss.xml">RSS Feed</a></div>
 </div>
