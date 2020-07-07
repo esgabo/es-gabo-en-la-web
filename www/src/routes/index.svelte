@@ -25,7 +25,7 @@
 		<svg class="anima" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
 			<path d="M13 9 L16 12 L13 15 M16 12 L8 12 M21 12 C21 16.9706 16.9706 21 12 21 C7.02944 21 3 16.9706 3 12 C3 7.02944 7.02944 3 12 3 C16.9706 3 21 7.02944 21 12Z" stroke="#4A5568" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
 		</svg>
-		<span class="ml-4 uppercase font-medium text-clg text-md">Hola Mundo</span>
+		<span class="ml-4 uppercase font-medium text-gray text-md">Hola Mundo</span>
 	</a>
 </div>
 

@@ -41,6 +41,10 @@
 	filter: drop-shadow(0 12px .3rem #113b54);
 }
 
+.shadowf {
+	filter: drop-shadow(0 6px .3rem gray);
+}
+
 .anima {
 	animation: move 1s alternate infinite;
 }
@@ -56,6 +60,10 @@
 
 .bg-clg {
 	background-color: #edf2f7;
+}
+
+.text-clg {
+	color:#edf2f7;
 }
 
 .roundesp {
