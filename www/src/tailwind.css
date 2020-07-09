@@ -58,6 +58,37 @@
 	}
 }
 
+.mt-11 {
+	margin-top: 2.75rem;
+}
+
+.mt-14e {
+	margin-top: 3.5625rem;
+}
+
+.mt-9 {
+	margin-top: 2.25rem;
+}
+
+.ml-3e {
+	margin-left: 0.78125rem;
+}
+
+.mt-4e {
+	margin-top: 1.1925rem;
+}
+
+.ml-7 {
+	margin-left: 1.5625rem;
+}
+
+.mt-es {
+	margin-top: 4.0625rem;
+}
+.w-esp {
+	width:350px;
+}
+
 .bg-clg {
 	background-color: #edf2f7;
 }

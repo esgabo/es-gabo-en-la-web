@@ -30,9 +30,9 @@
 </div>
 
 <section class="bg-clg py-8 flex flex-col items-center">
-	<h1 class="absolute mt-8 z-10 rounded-lg bg-white text-3xl font-bold px-2 py-2 text-gray-800 shadow-lg">¡Bienvenido!</h1>
+	<h1 class="absolute mt-8 z-10 rounded bg-white text-3xl font-bold px-2 py-2 text-gray-800 shadow-lg">¡Bienvenido!</h1>
 	<div class="container flex justify-center mx-auto m-8">
-		<div class="flex flex-wrap bg-white p-12 mx-4 mt-8 content shadow-md rounded-lg">
+		<div class="flex flex-wrap bg-white p-12 mx-4 mt-8 content shadow-md rounded">
 			<p>Soy Gabo y estoy comprometido a ayudar a aquellos que quieran adentrarse en este maravilloso mundo de tecnología tratando en aplicar diferentes enfoques con diferentes formatos de contenidos</p>
 			<p>Aquí encontraras publicaciónes e información acerca de programación y el desarrollo de software en general.</p>
 			<p>¿No sabes quién soy yo?. No hay problema, haz clic <a href="acerca-de-gabo">aquí</a> para saber más de mí.</p>

@@ -4,7 +4,7 @@
 
 <div class="pt-24">
 	<div class="container x-3 mx-auto flex flex-wrap flex-col md:flex-row items-center">
-		{#if segment === undefined}
+		{#if segment === undefined ? 'page' : undefined}
 			<div class="flex flex-col w-full md:w-2/5 justify-center items-start text-center md:text-left">
 				<p class="uppercase tracking-loose w-full">ahora...</p>
 				<h1 class="my-4 text-5xl font-bold leading-tight">Gabo en la Web!</h1>
@@ -13,6 +13,30 @@
 			<div class="w-full md:w-3/5 py-6 text-center">
 				<img class="w-full md:w-4/5 z-50" style="height:200px;" src="big_pc.svg" alt="pc"/>
 			</div>
+		{/if}
+		{#if segment === 'acerca-de-gabo' ? 'page' : undefined}
+			<div class="flex w-full justify-center items-start text-center">
+
+				<h1 class="my-4 text-5xl font-bold leading-tight py-32 sm:py-14 md:py-12 lg:py-18 xl:py-10">Acerca de Gabo</h1>
+
+			</div>
+
+		{/if}
+		{#if segment === 'contacto' ? 'page' : undefined}
+			<div class="flex w-full justify-center items-start text-center">
+
+				<h1 class="my-4 text-5xl font-bold leading-tight py-32 sm:py-14 md:py-12 lg:py-18 xl:py-10">Contacto</h1>
+
+			</div>
+
+		{/if}
+		{#if segment === 'blog' ? 'page' : undefined}
+			<div class="flex w-full justify-center items-start text-center">
+
+				<h1 class="my-4 text-5xl font-bold leading-tight py-32 sm:py-14 md:py-12 lg:py-18 xl:py-10">Blog</h1>
+
+			</div>
+
 		{/if}
 		<slot/>
 	</div>
