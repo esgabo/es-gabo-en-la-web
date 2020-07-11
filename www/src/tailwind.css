@@ -2,10 +2,26 @@
 @tailwind base;
 @tailwind components;
 
+.font-inter {
+	font-family:'Inter', sans-serif;
+}
+
 @media (min-width: 400px) {
 	body {
 		font-size: 16px;
 	}
+}
+
+.mt-contc {
+	margin-top: -120px;
+}
+
+.mt-about {
+	margin-top: -140px;
+}
+
+.mt-esp {
+	margin-top: -80px;
 }
 
 .text-2xs {

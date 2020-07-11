@@ -18,6 +18,5 @@
 		</p>
 		<p class="text-base px-6 mb-4 mt-2 content">{@html post.metadata.summary}</p>
 	</div>
-	<div class="flex-none mt-auto bg-white rounded rounded-t-none overflow-hidden shadow-md p-6">
-	</div>
+	
 </div>

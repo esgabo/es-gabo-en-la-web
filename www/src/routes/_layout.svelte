@@ -6,10 +6,14 @@
 	export let segment;
 </script>
 
-<main class="content-wrapper bg-clg font-sans text-copy-primary leading-normal flex flex-col min-h-screen">
+<svelte:head>
+	<link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+</svelte:head>
+
+<main class="content-wrapper bg-clg font-inter text-copy-primary leading-normal flex flex-col min-h-screen">
 	<Nav {segment}/>
 	<div class="shadowesp">
-		<header class="text-white ellipsex gradient md:pt-4 md:pb-16 lg:pt-12 lg:pb-32">
+		<header class="text-white ellipsex gradient mb-0 pb-0 pt-4 md:pt-4 md:pb-16 lg:pt-4 lg:pb-16">
     	<WaveTop {segment}/>
   	</header>
 	</div>
