@@ -4,7 +4,7 @@
 
 <section class="bg-clg py-8">
 
-	<div class="container flex flex-col justify-between mx-auto m-8 ">
+	<div class="container mt-contc relative flex flex-col justify-between mx-auto">
 
 		<div class="flex flex-col xl:flex-row">
 			<div class="my-3 mx-3 xl:w-1/2 p-6 flex bg-white shadow-md rounded">

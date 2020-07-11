@@ -3,8 +3,7 @@
 </svelte:head>
 
 <section class="bg-clg py-8 flex flex-col items-center">
-	<h1 class="absolute mt-8 z-10 rounded bg-white text-3xl font-bold px-2 py-2 text-gray-800 shadow-lg">Acerca de Gabo</h1>
-	<div class="container max-w-5xl mx-auto m-8">
+	<div class="container relative mt-about max-w-5xl mx-auto">
 		<div class="flex flex-wrap bg-white p-12 mx-4 mt-8 content shadow-md rounded">
 			<p>
 				Mi nombre es Gabriel Espinel y soy un desarrollador de software de profesión y vocación.<br/>

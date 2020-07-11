@@ -29,8 +29,7 @@
 	</a>
 </div>
 
-<section class="bg-clg py-8 flex flex-col items-center">
-	<h1 class="absolute mt-8 z-10 rounded bg-white text-3xl font-bold px-2 py-2 text-gray-800 shadow-lg">¡Bienvenido!</h1>
+<section class="bg-clg font-inter flex flex-col items-center">
 	<div class="container flex justify-center mx-auto m-8">
 		<div class="flex flex-wrap bg-white p-12 mx-4 mt-8 content shadow-md rounded">
 			<p>Soy Gabo y estoy comprometido a ayudar a aquellos que quieran adentrarse en este maravilloso mundo de tecnología tratando en aplicar diferentes enfoques con diferentes formatos de contenidos</p>
@@ -40,6 +39,10 @@
 	</div>
 </section>
 
-<section class="bg-clg py-8">
+<div class="container mx-auto flex justify-center">
+	<h1 class="bg-white my-4 px-4 py-4 rounded shadow-md text-3xl font-bold leading-tight text-center text-gray-800">Últimas Publicaciones</h1>
+</div>
+
+<section class="bg-clg mt-24 pt-8">
 	<PostList posts={posts} title={'Últimas Publicaciones'} cardWClasses={'md:w-1/3'}/>
 </section>
