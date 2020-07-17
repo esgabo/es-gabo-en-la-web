@@ -2,17 +2,12 @@
 	<title>Acerca de Gabo</title>
 </svelte:head>
 
-<section class="bg-white py-8">
-	<div class="container max-w-5xl mx-auto m-8">
-		<h1 class="w-full my-2 text-5xl font-bold leading-tight text-center text-gray-800">Acerca de Gabo</h1>
-		<div class="w-full mb-4">	
-			<div class="h-1 mx-auto gradient w-64 opacity-25 my-0 py-0 rounded-t"></div>
-		</div>
-	
-		<div class="flex flex-wrap w-full p-6 content">
+<section class="bg-clg py-8 flex flex-col items-center">
+	<div class="container relative mt-about max-w-5xl mx-auto">
+		<div class="flex flex-wrap bg-white p-12 mx-4 mt-8 content shadow-md rounded">
 			<p>
-				Mi nombre es Gabriel Espinel y soy un desarrollador de software de profesión y vocación<br/>
-				Ya van más de 10 años desde que me empezaron pagan por programar y un par de años adicionales haciendo algunos proyectos por diversión. 
+				Mi nombre es Gabriel Espinel y soy un desarrollador de software de profesión y vocación.<br/>
+				Ya van más de 10 años desde que me empezaron pagan por programar y un par de años adicionales haciendo algunos proyectos por diversión.
 			</p>
 			<p>
 				Durante este tiempo he trabajando en diversos proyectos con diferentes tecnologías (escritorio, web, móviles, dispositivos de pago, etc).<br/>

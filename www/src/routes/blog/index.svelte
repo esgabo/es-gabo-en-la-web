@@ -10,13 +10,13 @@
 	import PostList from '../../components/PostList.svelte';
 
 	export let posts;
-	
+
 </script>
 
 <svelte:head>
 	<title>Blog</title>
 </svelte:head>
 
-<section class="bg-white py-8">
+<section class="bg-clp py-8">
 	<PostList posts={posts} title={'Publicaciones'}/>
 </section>
