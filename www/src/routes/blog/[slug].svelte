@@ -15,6 +15,9 @@
 
 <script>
 	import PostMetaData from '../../components/PostMetaData.svelte';
+	import Card from '../../components/utils/panels/Card.svelte';
+	import HeaderSlot from '../../components/HeaderSlot.svelte';
+
 	export let post;
 </script>
 
@@ -22,26 +25,28 @@
 	<title>{post.metadata.title}</title>
 </svelte:head>
 
-<section class="bg-clg mt-esp mx-2 pt-0 pb-8">
+<HeaderSlot slotHtml={``}/>
 
-	<div class="container relative bg-white mx-auto flex flex-wrap pt-4 pb-12 shadow-md">
+<section class="flex flex-col items-center mb-4 relative">
+	<div class="container flex mx-auto w-5/6 sm:w-full xl:w-4/6">
+		<Card clazz="flex flex-wrap mt-4 rounded-lg rounded-md" commonClasses="px-6 py-2" header="true">
+			<h1 slot="header" class="w-full text-5xl sm:text-3xl mx-4 font-bold leading-tighttext-gray-800">{post.metadata.title}</h1>
+			<p class="w-full text-gray-600 text-xs">
+				<PostMetaData {post} displayTime={false}/>
+			</p>
 
-		<h1 class="w-full my-2 text-5xl mx-4 font-bold leading-tight text-center text-gray-800">{post.metadata.title}</h1>
-		<p class="w-full my-2 text-center text-gray-800">
-			<PostMetaData {post} displayTime={false}/>
-		</p>
-		<div class="w-full">
-			<div class="h-1 mx-auto gradient w-64 opacity-25 my-0 py-0 rounded-t"></div>
-		</div>
+			<div class="flex flex-wrap mt-10">
+				<div class="mx-auto content">
+				
+					<p>{post.metadata.summary}</p>
 
-		<div class="flex flex-wrap mt-5">
-			<div class="mx-auto content w-4/6">
-			{#if (post.metadata.heading_image)}
-			<img class="mb-5 w-3/4 mx-auto" alt="Header" src="{post.metadata.heading_image}"/>
-			{/if}
+				{#if (post.metadata.heading_image)}
+					<img class="mb-5 mx-auto max-h-screen" alt="Header" src="{post.metadata.heading_image}"/>
+				{/if}
 
-				{@html post.html}
+					{@html post.html}
+				</div>
 			</div>
-		</div>
+		</Card>
 	</div>
 </section>
