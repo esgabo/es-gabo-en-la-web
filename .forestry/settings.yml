@@ -21,6 +21,9 @@ sections:
   label: Links
   create: documents
   match: "**/*"
+  new_doc_ext: ".json"
+  templates:
+  - link
 upload_dir: www/static/media
 public_path: "/media"
 front_matter_path: ''
