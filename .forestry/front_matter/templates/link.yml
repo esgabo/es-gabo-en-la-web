@@ -32,3 +32,5 @@ fields:
       file: 
       path: 
   label: Type
+pages:
+- links/youtube_channel.json
