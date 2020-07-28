@@ -1,4 +1,34 @@
 ---
 label: Link
 hide_body: true
-fields: []
+fields:
+- name: name
+  type: text
+  config:
+    required: true
+  label: Name
+- name: link
+  type: text
+  config:
+    required: true
+  label: Link
+- name: active
+  type: boolean
+  label: Active
+  default: true
+- name: type
+  type: select
+  default: []
+  config:
+    required: true
+    options:
+    - youtube
+    - course
+    - website
+    - article
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
+  label: Type
