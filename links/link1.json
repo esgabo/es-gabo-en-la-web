@@ -1,8 +1,8 @@
 {
-  "active": false,
+  "active": true,
   "type": "youtube",
-  "name": "Canal de YouTube",
   "link": "https://www.youtube.com/channel/UCg5oehh0kF-XBfuuqgGOqsA",
   "title": "Canal de YouTube",
+  "subtitle": "Visita mi canal",
   "order": 1
 }

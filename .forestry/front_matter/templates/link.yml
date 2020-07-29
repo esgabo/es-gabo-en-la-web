@@ -7,6 +7,11 @@ fields:
   config:
     required: true
   label: Title
+- name: subtitle
+  type: text
+  config:
+    required: true
+  label: Subtitle
 - name: link
   type: text
   config:
@@ -44,4 +49,13 @@ fields:
     step: 1
     required: true
 pages:
-- links/youtube_channel.json
+- links/link1.json
+- links/link10.json
+- links/link2.json
+- links/link3.json
+- links/link4.json
+- links/link5.json
+- links/link6.json
+- links/link7.json
+- links/link8.json
+- links/link9.json
