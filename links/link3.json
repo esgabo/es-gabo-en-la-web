@@ -1,8 +1,8 @@
 {
   "active": true,
   "type": "article",
-  "link": "https://esgabo.dev/blog",
+  "order": 3,
   "title": "Es Gabo en la Web",
   "subtitle": "Publicaciones de Gabo",
-  "order": 3
+  "link": "https://esgabo.dev/blog"
 }
