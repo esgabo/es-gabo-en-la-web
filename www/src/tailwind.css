@@ -126,6 +126,10 @@ body {
 	width: 100%;
 	height: 100%;
 }
+
+.shiki {
+  @apply p-5 mt-5 mb-5 rounded;
+}
 /* purgecss end ignore */
 
 @tailwind utilities;

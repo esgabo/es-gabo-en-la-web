@@ -2,11 +2,26 @@ import { createFilter } from 'rollup-pluginutils';
 import path from 'path';
 import frontMatter from 'gray-matter';
 import readingTime from 'reading-time';
+import MarkdownIt from 'markdown-it';
+import mdBlockVideoPlugin from 'markdown-it-block-embed';
+import shiki from 'shiki';
 
 export default function convertMarkdown(options = {}) {
     const filter = createFilter(options.include, options.exclude);
 
-    const converter = options.converter;
+    let highlighter;
+    // forces to wait for promise
+    (async function() { highlighter = await getHighlighter();})();
+
+    const converter = new MarkdownIt({
+      highlight: (code, lang) => {
+        return highlighter.codeToHtml(code, lang);
+      }
+    })
+    .use(mdBlockVideoPlugin, {
+      containerClassName: "video-embed",
+      outputPlayerSize: false
+    });
 
     return {
         name: 'rollup-md-converter-plugin',
@@ -22,7 +37,7 @@ export default function convertMarkdown(options = {}) {
             const metadata = matterResult.data;
             metadata.reading = readingTime(matterResult.content);       
 
-            const html = converter.convertMarkdown(matterResult.content);
+            const html = converter.render(matterResult.content);
 
             const result = JSON.stringify({
                 html,
@@ -39,3 +54,6 @@ export default function convertMarkdown(options = {}) {
     };
 }
 
+function getHighlighter() {
+  return shiki.getHighlighter({ theme: 'nord' });
+}
