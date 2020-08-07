@@ -14,6 +14,22 @@ heading_image: "/media/svelte-f-b.webp"
 published: true
 
 ---
+---
+published_date: 2020-08-07T16:08:14Z
+tags:
+- svelte
+- frontend
+- principiante
+created_date: 2020-08-07T16:08:14Z
+title: "¿Por qué Svelte es el mejor Framework moderno para principiantes?"
+summary: |-
+  Hace 10 años era posible crear apps solo con las tecnologías básicas, añadiendo librerías como jQuery. Sin embargo, hoy en día no es suficiente.
+  Cuando eres principiante y acabas de entender los conceptos de HTML, JS, y CSS, se hace un poco difícil aprender las nuevas tecnologías que se usan actualmente en la industria. Es por eso que Svelte se convierte en un framework maravilloso que, entre otros beneficios, puede ayudar a aquellos que se están iniciando a aprender las prácticas modernas del desarrollo FrontEnd.
+author: Gabriel Espinel | @es.gabo
+heading_image: "/media/svelte-f-b.webp"
+published: true
+
+---
 Antes que nada voy a aclarar algunas cosas para evitar recibir amenazas de muerte por parte de los fanáticos de otros _frameworks_ como React, Angular o Vue.
 
 Esta publicación **no** es para decir que un _framework_ es mejor que otro. Cada uno tienes sus fortalezas y debilidades. Aquí solamente estoy dando mi opinión después de haber jugado con Svelte, y ya teniendo un poco de experiencia con los otros _frameworks_. ¡Así que cálmense!.
@@ -60,87 +76,95 @@ Por supuesto que hay que aprender cosas adicionales, pero estos puntos adicional
 
 Consideremos este componente en React donde se tienen dos campos de textos para sumar dos números y mostrarlos por pantalla.
 
-    import React, { useState } from 'react';
-    
-    export default () => {
-      const [a, setA] = useState(1);
-      const [b, setB] = useState(2);
-    
-      function handleChangeA(event) {
-        setA(+event.target.value);
-      }
-    
-      function handleChangeB(event) {
-        setB(+event.target.value);
-      }
-    
-      return (
-        <div>
-          <input type="number" value={a} onChange={handleChangeA}/>
-          <input type="number" value={b} onChange={handleChangeB}/>
-    
-          <p>{a} + {b} = {a + b}</p>
-        </div>
-      );
-    };
+```jsx
+import React, { useState } from 'react';
+
+export default () => {
+  const [a, setA] = useState(1);
+  const [b, setB] = useState(2);
+
+  function handleChangeA(event) {
+    setA(+event.target.value);
+  }
+
+  function handleChangeB(event) {
+    setB(+event.target.value);
+  }
+
+  return (
+    <div>
+      <input type="number" value={a} onChange={handleChangeA}/>
+      <input type="number" value={b} onChange={handleChangeB}/>
+      <p>{a} + {b} = {a + b}</p>
+    </div>
+  );
+};
+```
 
 Mi primera impresión como un principiante, serían las siguientes preguntas: ¿Para qué debemos usar ese setState? ¿Por qué tengo que declarar un arreglo con dos elementos? ¿No sería suficiente tener una variable y ya? ¿Por qué tengo que retornar el HTML desde este JavaScript?. Por supuesto que hay una explicación para todo esto pero esto luce diferente a lo básico que han aprendido. Claro que pueden aprender JSX, Hooks, CSS-In-JS, Redux, etc. Pero es algo que va a llevar su tiempo.
 
 Veamos un componente equivalente usando Angular:
 
-    import { Component } from '@angular/core';
-     
-    @Component({
-      selector: 'my-app',
-      template: `
-        <input type="number" [(ngModel)]="a">
-        <input type="number" [(ngModel)]="b">
-        <p>{{a}} + {{b}} = {{a + b}}</p>
-      `
-    })
-    export class AppComponent {
-      a : number;
-      b : number;  
-    }
+```typescript
+import { Component } from '@angular/core';
+ 
+@Component({
+  selector: 'my-app',
+  template: `
+	<input type="number" [(ngModel)]="a">
+	<input type="number" [(ngModel)]="b">
+	<p>{{a}} + {{b}} = {{a + b}}</p>
+  `
+})
+export class AppComponent {
+  a : number;
+  b : number;  
+}
+```
 
-Se ve un componente más corto, de menor tamaño. ¿Qué es ese i?, ¿Por qué el HTML esta dentro de esa propiedad de ese objeto JavaScript? ¿Qué es ese _ngModel_? ¿Qué es TypeScript?. Aún se ve diferente a lo básico, y por tanto, deberán tomarse su tiempo para acostumbrarse a aprender estas diferencias.
+Se ve un componente más corto, de menor tamaño. ¿Qué es ese _@Component_?, ¿Por qué el HTML esta dentro de esa propiedad de ese objeto JavaScript? ¿Qué es ese _ngModel_? ¿Qué es TypeScript?. Aún se ve diferente a lo básico, y por tanto, deberán tomarse su tiempo para acostumbrarse a aprender estas diferencias.
 
 Para ser justos, en Angular podríamos definir el HTML en su propio archivo, pero estaríamos siguiendo un enfoque diferente (y no es que esté mal) al tener separados los diferentes aspectos del mismo componente en archivos separados.
 
 Ahora veamos la contraparte en Vue.
 
-    <template>
-      <div>
-        <input type="number" v-model.number="a">
-        <input type="number" v-model.number="b">
-        <p>{{a}} + {{b}} = {{a + b}}</p>
-      </div>
-    </template>
-    
-    <script>
-      export default {
-        data: function() {
-          return {
-            a: 1,
-            b: 2
-          };
-        }
+```vue
+<template>
+  <div>
+    <input type="number" v-model.number="a">
+	<input type="number" v-model.number="b">
+	<p>{{a}} + {{b}} = {{a + b}}</p>
+  </div>
+</template>
+
+<script>
+  export default {
+    data: function() {
+      return {
+        a: 1,
+        b: 2
       };
-    </script>
+    }
+  };
+</script>
+```
 
 Lo vemos, un poco más limpio. Se parece más a lo que estamos acostumbrados. Etiquetas en HTML, incluyendo el uso de la etiqueta Script para el código JavaScript. ¿Por qué tenemos que poner ese "export default"? ¿Por qué las variables deben estar dentro de esa propiedad "data" que es una función que retorna un objeto con las variables que quiero tener?. Creo que se puede mejorar.
 
 Finalmente, veamos como sería este componente en Svelte.
 
-    <script>
-    	let a = 1;
-    	let b = 2;
-    </script>
-    
-    <input type="number" bind:value={a}>
-    <input type="number" bind:value={b}>
-    
-    <p>{a} + {b} = {a + b}</p>
+```html
+<script>
+  let a = 1;
+  let b = 2;
+</script>
+
+<div>
+  <input type="number" bind:value={a}>
+  <input type="number" bind:value={b}>
+  <p>{a} + {b} = {a + b}</p>
+</div>
+```
 
 Es similar al componente de Vue. Sin embargo, el área del script se ve más limpia. Aún habría que aprender el significado de "bind:value" al igual que los otros, pero se ve mucho más cercano a algo básico.
 
