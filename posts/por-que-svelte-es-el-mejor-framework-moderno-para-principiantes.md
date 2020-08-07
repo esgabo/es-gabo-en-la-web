@@ -14,22 +14,6 @@ heading_image: "/media/svelte-f-b.webp"
 published: true
 
 ---
----
-published_date: 2020-08-07T16:08:14Z
-tags:
-- svelte
-- frontend
-- principiante
-created_date: 2020-08-07T16:08:14Z
-title: "¿Por qué Svelte es el mejor Framework moderno para principiantes?"
-summary: |-
-  Hace 10 años era posible crear apps solo con las tecnologías básicas, añadiendo librerías como jQuery. Sin embargo, hoy en día no es suficiente.
-  Cuando eres principiante y acabas de entender los conceptos de HTML, JS, y CSS, se hace un poco difícil aprender las nuevas tecnologías que se usan actualmente en la industria. Es por eso que Svelte se convierte en un framework maravilloso que, entre otros beneficios, puede ayudar a aquellos que se están iniciando a aprender las prácticas modernas del desarrollo FrontEnd.
-author: Gabriel Espinel | @es.gabo
-heading_image: "/media/svelte-f-b.webp"
-published: true
-
----
 Antes que nada voy a aclarar algunas cosas para evitar recibir amenazas de muerte por parte de los fanáticos de otros _frameworks_ como React, Angular o Vue.
 
 Esta publicación **no** es para decir que un _framework_ es mejor que otro. Cada uno tienes sus fortalezas y debilidades. Aquí solamente estoy dando mi opinión después de haber jugado con Svelte, y ya teniendo un poco de experiencia con los otros _frameworks_. ¡Así que cálmense!.
