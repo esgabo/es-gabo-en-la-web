@@ -36,7 +36,8 @@ export default {
       json(),
 			replace({
 				'process.browser': true,
-				'process.env.NODE_ENV': JSON.stringify(mode)
+        'process.env.NODE_ENV': JSON.stringify(mode),
+				'ANALYTICS_ID': process.env.ANALYTICS_ID,
 			}),
 			svelte({
 				preprocess,
@@ -85,7 +86,8 @@ export default {
       json(),
 			replace({
 				'process.browser': false,
-				'process.env.NODE_ENV': JSON.stringify(mode)
+				'process.env.NODE_ENV': JSON.stringify(mode),
+				'ANALYTICS_ID': process.env.ANALYTICS_ID,
 			}),
 			svelte({
 				preprocess,
