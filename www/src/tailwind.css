@@ -76,6 +76,11 @@ body {
 
 .content {
 	@apply text-gray-800 text-base text-justify;
+	width: 100%;
+}
+
+.content pre {
+	overflow-x: auto;
 }
 
 .content > p {
