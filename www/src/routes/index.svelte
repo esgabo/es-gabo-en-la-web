@@ -40,7 +40,7 @@
 
 <section class="flex flex-col items-center mb-4">
 	<div class="container flex justify-center mx-auto w-5/6 sm:w-full xl:w-4/6">
-		<Card clazz="flex flex-wrap mt-4 rounded-lg rounded-md" commonClasses="px-6 py-6">
+		<Card clazz="flex flex-wrap mt-4 rounded-lg rounded-md" commonClasses="sm:px-1 px-6 py-6">
 			<p>Soy Gabo y estoy comprometido a ayudar a aquellos que quieran adentrarse en este maravilloso mundo de tecnología tratando en aplicar diferentes enfoques con diferentes formatos de contenidos</p>
 			<p>Aquí encontraras publicaciónes e información acerca de programación y el desarrollo de software en general.</p>
 			<p>¿No sabes quién soy yo?. No hay problema, haz clic <a href="acerca-de-gabo">aquí</a> para saber más de mí.</p>
@@ -49,5 +49,5 @@
 </section>
 
 <section class="flex flex-col items-center">
-	<PostList {posts} clazz="container flex flex-wrap mx-auto mb-4 w-5/6 sm:w-full xl:w-4/6" cardClass="rounded-lg rounded-md p-6 m-1 flex flex-col flex-grow flex-shrink w-full md:w-1/3 lg:w-1/4 xl:w-1/4"/>
+	<PostList {posts} clazz="container flex flex-wrap mx-auto mb-4 w-5/6 sm:w-full xl:w-4/6" cardClass="rounded-lg rounded-md sm:p-2 p-6 m-1 flex flex-col flex-grow flex-shrink w-full md:w-1/3 lg:w-1/4 xl:w-1/4"/>
 </section>
