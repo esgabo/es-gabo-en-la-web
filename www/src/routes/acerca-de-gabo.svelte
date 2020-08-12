@@ -17,7 +17,7 @@
 	<div class="container flex justify-center mx-auto w-5/6 sm:w-full xl:w-4/6">
 		<Card clazz="flex flex-wrap mt-4 rounded-lg rounded-md" commonClasses="sm:px-1 px-6 py-6">
 			<p>Mi nombre es Gabriel Espinel y soy un desarrollador de software de profesión y vocación.<br/>
-				Ya van más de 10 años desde que me empezaron pagan por programar y un par de años adicionales haciendo algunos proyectos por diversión.</p>
+				Ya van más de 10 años desde que me empezaron a pagan por programar y un par de años adicionales haciendo algunos proyectos por diversión.</p>
 			<p>Durante este tiempo he trabajando en diversos proyectos con diferentes tecnologías (escritorio, web, móviles, dispositivos de pago, etc).<br/>
 				Mi fuerte es el Back-End, principalmente en el entorno empresarial (con Java), pero me considero Full-Stack y no tengo ningún inconveniente en aprender cosas nuevas.</p>
 			<p>Soy Curioso por naturaleza y apasionado por las soluciones elegantes y bien hechas. Me apasiona la tecnología en general (no solo la programación).<br/>

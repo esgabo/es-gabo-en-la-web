@@ -87,7 +87,7 @@
 					<h5 class="uppercase text-lg font-semibold tracking-widest font-quicksand">Aquí está mi GitHub</h5>
 					<div class="text-gray-500 text-center uppercase text-xs tracking-widest">Mira mis <a class="underline" href="https://github.com/esgabo/">repositorios</a>
 					</div>
-					<div class="mt-6 text-center leading-relaxed text-gray-700">Puedes encontrar mi perfil de LinkedIn y enviarme una solicitud para conectar</div>
+					<div class="mt-6 text-center leading-relaxed text-gray-700">Puedes encontrar mi perfil de GitHub y mis repositorios</div>
 				</div>
 			</div>
 		</div>
