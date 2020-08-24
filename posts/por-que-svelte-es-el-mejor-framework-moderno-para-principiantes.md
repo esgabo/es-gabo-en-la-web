@@ -22,9 +22,11 @@ Si sienten alguna molestia o no soportan las opiniones contrarias a sus creencia
 
 También tengo que aclarar que solo estoy tomando en cuenta los _frameworks_ más populares React, Angular y Vue. Entonces si existe algún otro _framework_ que no sea tan popular y consideran que es mejor que Svelte, háganmelo saber.
 
-Ya que pasamos la advertencia. Lo primero que tengo que definir es a que me refiero con "principiantes". Me refiero a quellas personas que no tienen experiencia profesional y que acaban de terminar algún curso, tutorial, libro, etc. acerca de lo básico del desarrollo web (HTML, JS, CSS) y tienen la preguntan ¿Ahora qué?.
+Ya que pasamos la advertencia. Lo primero que tengo que definir es a que me refiero con "principiantes". 
 
-En muchos sitios aún se dice que aprendiendo lo básico ya vas a ser un desarrollador web y eso es técnicamente es cierto: si dominas esos lenguajes vas a poder hacer aplicaciones web (generalmente sencillas). Pero en el mundo profesional, cuando tengas un empleo en alguna empresa, con casi seguridad esto no va a ser suficiente, porque la industria del desarrollo FrontEnd usa mucho más que lo básico. Usa herramientas como _Bundlers_, Preprocesadores, _frameworks_ modernos para JavaScript, administrador de paquetes, y una cantidad de tecnologías que van mucho más allá del simple HTML/JS/CSS.
+Me refiero a quellas personas que no tienen experiencia profesional y que acaban de terminar algún curso, tutorial, libro, etc. acerca de lo básico del desarrollo web (HTML, JS, CSS) y tienen la pregunta ¿Ahora qué?.
+
+En muchos sitios aún se dice que aprendiendo lo básico ya vas a ser un desarrollador web y eso es técnicamente es cierto: si dominas esos lenguajes vas a poder hacer aplicaciones web (generalmente sencillas). Pero en el mundo profesional, cuando tengas un empleo en alguna empresa o estes buscando un empleo, con casi seguridad, esto no va a ser suficiente porque la industria del desarrollo FrontEnd usa mucho más que lo básico. Usa herramientas como _Bundlers_, Preprocesadores, _frameworks_ modernos para JavaScript, administrador de paquetes, y una cantidad de tecnologías que van mucho más allá del simple HTML/JS/CSS.
 
 ## ¿Qué es Svelte?
 
@@ -36,13 +38,15 @@ Svelte es en el fondo un compilador que traduce tus componentes desarrollados a 
 
 Entre las ventajas más destacadas de Svelte se encuentran su desempeño (más rápido que otros _frameworks_), su simplicidad (menos código repetitivo), su reactividad (administración de estado de los componentes de manera simple), y su poca huella en el tamaño de la app generada (una app en Svelte pesa significativamente menos que una app en otros _frameworks_).
 
-He de aclarar que aunque es cierto todo esto, también es relativo. Por ejemplo, no podemos simplemente decir que Svelte es mejor que React solo por ser algunas milésimas de segundo más rápido. Es cierto que es más rápido, pero llegara un punto donde la diferencia no es tan significativa y no impacta la experiencia del usuario. Así que no se dejen llevar solo por esa métrica, ya que dependerá realmente de la complejidad de la aplicación.
+He de aclarar que aunque es cierto todo esto, también es relativo. Por ejemplo, no podemos simplemente decir que Svelte es mejor que React solo por ser algunas milésimas de segundo más rápido. Es cierto que es más rápido, pero llegará un punto donde la diferencia no es tan significativa y no impacta la experiencia del usuario. Así que no se dejen llevar solo por esa métrica, ya que dependerá realmente de la complejidad de la aplicación.
 
-Lo mismo en el caso del tamaño de la app. Menos no siempre significa mejor. Sin duda es algo bueno tener una aplicación que pese menos, ya que se transmite más rápidamente por la red, y si tiene menos código adicional que procesar, pues el motor de JavaScript tendrá menos trabajo, lo que implica naturalmente una carga más rápida. Pero, nuevamente, es relativo, ya que los otros _frameworks_ están optimizados.
+Lo mismo en el caso del tamaño de la app. Menos no siempre significa mejor. 
 
-En cuanto a la simplicidad pero necesitar menos código, sí me parece muy importante para los principiantes o incluso expertos que quieran adoptar Svelte. Creo que todo podemos estar de acuerdo que entre menos código tengamos que escribir, es más fácil de aprender una tecnología.
+Sin duda es algo bueno tener una aplicación que pese menos, ya que se transmite más rápidamente por la red, y si tiene menos código adicional que procesar, pues el motor de JavaScript tendrá menos trabajo, lo que implica naturalmente una carga más rápida. Pero, nuevamente, es relativo, ya que los otros _frameworks_ también están optimizados.
 
-Una acotación que hay que hacer es que he leído publicaciones o visto videos donde expresan que Svelte es mejor simplemente por necesitar menos líneas de código para generar componentes. Esto es simplemente incorrecto. Medir si algo es mejor por el número de líneas de código no está bien porque empieza a generar una práctica de tratar de meter todo los más compacto posible para decir que es "mejor".
+En cuanto a la simplicidad por necesitar menos código, sí me parece muy importante para los principiantes o incluso expertos que quieran adoptar Svelte. Creo que todo podemos estar de acuerdo que entre menos código tengamos que escribir, es más fácil de aprender una tecnología.
+
+Una acotación que hay que hacer es que he leído publicaciones o visto videos donde expresan que Svelte es mejor simplemente por necesitar menos líneas de código para generar componentes. Esto es simplemente incorrecto. Medir si algo es mejor por el número de líneas de código no está bien porque empieza a generar una práctica de tratar de hacer todo los más compacto posible para decir que es "mejor".
 
 No por meter todo en una sola linea va a ser mejor. Esto es muy importante que lo tengamos claro. ¿En dónde está la diferencia? Si tenemos el mismo componente escrito en dos lenguajes diferentes (o _frameworks_ diferentes) y ambos han aplicado las buenas practicas (e.g. es un código limpio y es fácil de entender), entonces la suposición es que menos líneas de código es menos código que mantener y por tanto menos probabilidad de errores. Aunque esto no es necesariamente cierto.
 
@@ -85,7 +89,7 @@ export default () => {
 };
 ```
 
-Mi primera impresión como un principiante, serían las siguientes preguntas: ¿Para qué debemos usar ese setState? ¿Por qué tengo que declarar un arreglo con dos elementos? ¿No sería suficiente tener una variable y ya? ¿Por qué tengo que retornar el HTML desde este JavaScript?. Por supuesto que hay una explicación para todo esto pero esto luce diferente a lo básico que han aprendido. Claro que pueden aprender JSX, Hooks, CSS-In-JS, Redux, etc. Pero es algo que va a llevar su tiempo.
+Mi primera impresión como un principiante, serían las siguientes preguntas: ¿Para qué debemos usar ese setState? ¿Por qué tengo que declarar un arreglo con dos elementos? ¿No sería suficiente tener una variable y ya? ¿Por qué tengo que retornar el HTML desde este JavaScript?. Por supuesto que hay una explicación para todo esto pero luce diferente a lo básico que han aprendido. Claro que pueden aprender JSX, Hooks, CSS-In-JS, Redux, etc. Pero es algo que va a llevar su tiempo.
 
 Veamos un componente equivalente usando Angular:
 
@@ -156,7 +160,7 @@ Con estos ejemplos nos damos cuenta de que para alguien sin mucho conocimiento n
 
 Sin duda que este fue un ejemplo básico, pero no tengo duda de que aun en escenarios más complejos, el resultado es similar a lo que acabamos de ver con estos ejemplos.
 
-Finalmente, con esto no quiero decir que no deben aprender los otros frameworks, o que son peores. Solo estoy diciendo que Svelte es más sencillo de aprender y se siente más natural para aquellos que se están adentro a este mundo y tienen conocimientos limitados.
+Finalmente, con esto no quiero decir que no deben aprender los otros frameworks, o que son peores. Solo estoy diciendo que Svelte es más sencillo de aprender y se siente más natural para aquellos que se están adentrando a este mundo y tienen conocimientos limitados.
 
 ## Conclusiones
 
