@@ -174,7 +174,7 @@ Esto es totalmente falso, y además costoso.
 
 Tampoco necesitas saber Linux para aprender a programar. Sin duda no está de más aprender Linux, y lo recomiendo. Pero no es un requisito, y si usas un sistema operativo con el cual ya estás acostumbrado, tendrás una cosa menos de que preocuparte mientras te estabilizas.
 
-# Conclusiones
+## Conclusiones
 
 Por estas razones yo uso Windows y no Linux como mi sistema operativo principal.
 
