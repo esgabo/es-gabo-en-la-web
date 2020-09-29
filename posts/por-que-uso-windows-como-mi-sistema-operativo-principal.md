@@ -181,3 +181,7 @@ Por estas razones yo uso Windows y no Linux como mi sistema operativo principal.
 Cabe aclarar que he tenido que usar Linux en muchas ocasiones. He aprendido mucho de Linux y es un muy buen Sistema Operativo. Pero yo estoy contento con Windows y lo más importante, me funciona.
 
 ¿Tienes alguna preferencia por Windows?, eso está perfectamente bien si cumple con tus necesidades. ¿Tienes preferencia por Linux? No hay ningún problema, es un buen sistema operativo. ¿Te gusta más Mac y tienes el dinero adicional? Perfecto, cómpralo y me cuentas como te va.
+
+_Esta publicación está basada en el video de mi canal en YouTube_
+
+@[youtube](uDS-H45QSHw)
