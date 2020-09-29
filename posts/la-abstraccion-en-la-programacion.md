@@ -1,9 +1,9 @@
 ---
-published_date: 2020-06-24T20:08:57Z
+published_date: 2020-06-24T20:08:57.000+00:00
 tags:
 - programacion
 - fundamentos
-created_date: 2020-06-24T20:08:57Z
+created_date: 2020-06-24T20:08:57.000+00:00
 title: La Abstracción en la programación
 summary: |
   La abstracción más que una palabra elegante de programación, es un concepto que aplicamos en nuestra vida diaria. Especialmente útil y necesaria en la programación aunque un poco complejo de entender al principio y aplicarlo adecuadamente.
@@ -90,3 +90,7 @@ Encontrar el nivel de abstracción adecuado no es trivial. En mi opinión, es al
 La abstracción más que una palabra elegante de programación, es un concepto que aplicamos en nuestra vida diaria.
 
 Especialmente útil y necesaria en la programación aunque un poco complejo de entender al principio y aplicarlo adecuadamente.
+
+_Esta publicación está basada en el video de mi canal en YouTube_
+
+@[youtube](puTrRZd6_aI)
