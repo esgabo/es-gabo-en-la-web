@@ -57,7 +57,7 @@
     "sapper": "^0.27.0",
     "shiki": "^0.1.7",
     "sitemap": "^6.1.6",
-    "svelte": "^3.0.0",
+    "svelte": "^3.49.0",
     "svelte-preprocess": "^3.9.7",
     "tailwindcss": "^1.4.6",
     "sapper-google-analytics": "^1.0.2"
